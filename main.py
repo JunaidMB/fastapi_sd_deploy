@@ -34,7 +34,7 @@ def img_to_bytestring(img: Image.Image) -> List[str]:
   return imgs_b64
 
   
-@app.post("/generate_image_rest_direct")
+@app.post("/")
 def generate_image_direct(payload: Post) -> Dict[str, List[str]]:
 
   # Load the image data into a PIL Image object
